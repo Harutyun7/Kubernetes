@@ -1,0 +1,3 @@
+# kubernetes usefull commands
+# get secret value decripted 
+ kubectl get secret <secret name> -o jsonpath='{.data}' -n <namespace>
