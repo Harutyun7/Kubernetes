@@ -1,3 +1,6 @@
 # kubernetes usefull commands
 # get secret value decripted 
- kubectl get secret <secret name> -o jsonpath='{.data}' -n <namespace>
+kubectl get secret <secret name> -o jsonpath='{.data}' -n <namespace>
+# exec to container 
+kubectl exec -it container_name bash
+kubectl exec -it container_name sh
